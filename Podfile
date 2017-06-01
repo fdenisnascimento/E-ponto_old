@@ -8,6 +8,9 @@ target 'E-ponto' do
   # Pods for E-ponto
 	pod 'Firebase/Core'
 	pod 'Firebase/Auth'
+	pod 'IQKeyboardManagerSwift'
+	pod 'RxSwift',    '~> 3.0'
+	pod 'RxCocoa',    '~> 3.0'
 	
 
 end

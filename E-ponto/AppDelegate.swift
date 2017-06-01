@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import IQKeyboardManagerSwift
 
 
 @UIApplicationMain
@@ -19,26 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        FIRApp.configure()
+
         
-        let email = "denis@thssolution.com"
-        let password = "123456"
-        
-//        FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
-//            
-//        })
-        
-        
-        FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
-            
-            if error == nil {
-                
-                print(user?.email?)
-            }
-            
-            
-        })
-        
+        configureFirebase()
+        configureIQKeyboardManager()
         
         return true
     }
@@ -112,5 +97,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
 
+}
+
+
+extension AppDelegate {
+    func configureFirebase() -> Void {
+        FIRApp.configure()
+    }
+    
+    func configureIQKeyboardManager() -> Void {
+        IQKeyboardManager.sharedManager().enable = true
+    }
 }
 
