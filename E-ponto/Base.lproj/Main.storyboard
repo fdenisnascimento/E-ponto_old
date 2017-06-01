@@ -58,9 +58,6 @@
                                     <constraint firstAttribute="width" constant="250" id="nkH-Ob-XRh"/>
                                 </constraints>
                                 <state key="normal" title="Esqueceu sua senha?"/>
-                                <connections>
-                                    <action selector="requestPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kpW-Vt-6bx"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zlK-2N-eUH">
                                 <rect key="frame" x="62" y="360" width="250" height="35"/>
@@ -70,9 +67,6 @@
                                     <constraint firstAttribute="width" constant="250" id="h8Z-Td-LmG"/>
                                 </constraints>
                                 <state key="normal" title="Entrar"/>
-                                <connections>
-                                    <action selector="enter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nCh-D8-SAq"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.92941176470588238" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -94,13 +88,15 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="textEmail" destination="Xn0-7l-Y8f" id="cxM-9G-QLn"/>
-                        <outlet property="textPassword" destination="j4U-tD-9Sf" id="RSl-gv-cXW"/>
+                        <outlet property="loginButton" destination="zlK-2N-eUH" id="pVh-lE-le1"/>
+                        <outlet property="passwordTextField" destination="j4U-tD-9Sf" id="n5I-IZ-zKB"/>
+                        <outlet property="requestButton" destination="RBD-cI-Ca2" id="F26-uP-jP9"/>
+                        <outlet property="usernameTextField" destination="Xn0-7l-Y8f" id="fCt-QG-ahK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="115.59220389805098"/>
+            <point key="canvasLocation" x="-110" y="78"/>
         </scene>
     </scenes>
     <resources>
