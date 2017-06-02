@@ -32,7 +32,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     self.viewModel.loginObservable.bind{ user, error in
       
-      
+        if (error != nil) { self.goMainView() }
       
       }.addDisposableTo(disposeBag)
     
@@ -70,6 +70,15 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
   func loginSuccess() -> Void {
     showMessage(title: nil, message: "Login efetuado com sucesso", button: "OK")
   }
+    
+    func goMainView() -> Void {
+                
+        let navController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "navController") as! UINavigationController
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        appDelegate.window?.rootViewController = navController
+        
+        
+    }
   
   // MARK: - setup
   
@@ -78,6 +87,7 @@ class LoginViewController: BaseViewController, UITextFieldDelegate {
     usernameTextField.addBottomBorderWithColor(color: UIColor.gray, width: 1.0)
     passwordTextField.addBottomBorderWithColor(color: UIColor.gray, width: 1.0)
     usernameTextField.text = "fdenisnascimento@gmail.com"
+    passwordTextField.text = "123456"
   }
   
   private func setupModelView() {
