@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		4BB794C944E54A6315B38863 /* Pods_E_ponto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A9368E311FB4460BB8E24FA /* Pods_E_ponto.framework */; };
-		5C14DDDC1EE1028300699815 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14DDDB1EE1028300699815 /* MainViewController.swift */; };
+		5C14301B1EE4C3CA00589507 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1430191EE4C3CA00589507 /* LoginViewController.swift */; };
+		5C14301C1EE4C3CA00589507 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14301A1EE4C3CA00589507 /* MainViewController.swift */; };
+		5C14301E1EE4C53800589507 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14301D1EE4C53800589507 /* AlertView.swift */; };
 		5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */; };
 		5CD124A61EDF9D7A00A54628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD124A41EDF9D7A00A54628 /* Main.storyboard */; };
 		5CD124A91EDF9D7A00A54628 /* E_ponto.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5CD124A71EDF9D7A00A54628 /* E_ponto.xcdatamodeld */; };
@@ -18,8 +20,6 @@
 		5CD7D2551EE0F8D5008BF6DF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2491EE0F8D5008BF6DF /* Extensions.swift */; };
 		5CD7D2561EE0F8D5008BF6DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D24B1EE0F8D5008BF6DF /* User.swift */; };
 		5CD7D2571EE0F8D5008BF6DF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5CD7D24D1EE0F8D5008BF6DF /* GoogleService-Info.plist */; };
-		5CD7D2581EE0F8D5008BF6DF /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D24F1EE0F8D5008BF6DF /* BaseViewController.swift */; };
-		5CD7D2591EE0F8D5008BF6DF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2501EE0F8D5008BF6DF /* LoginViewController.swift */; };
 		5CD7D25A1EE0F8D5008BF6DF /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2521EE0F8D5008BF6DF /* BaseViewModel.swift */; };
 		5CD7D25B1EE0F8D5008BF6DF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD7D2531EE0F8D5008BF6DF /* LoginViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -27,7 +27,9 @@
 /* Begin PBXFileReference section */
 		10AD806B5BBB0E62053FB5D7 /* Pods-E-ponto.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ponto.release.xcconfig"; path = "Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto.release.xcconfig"; sourceTree = "<group>"; };
 		1A9368E311FB4460BB8E24FA /* Pods_E_ponto.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_E_ponto.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C14DDDB1EE1028300699815 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5C1430191EE4C3CA00589507 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5C14301A1EE4C3CA00589507 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		5C14301D1EE4C53800589507 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		5CD1249D1EDF9D7A00A54628 /* E-ponto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-ponto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5CD124A51EDF9D7A00A54628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -39,8 +41,6 @@
 		5CD7D2491EE0F8D5008BF6DF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		5CD7D24B1EE0F8D5008BF6DF /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5CD7D24D1EE0F8D5008BF6DF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		5CD7D24F1EE0F8D5008BF6DF /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		5CD7D2501EE0F8D5008BF6DF /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5CD7D2521EE0F8D5008BF6DF /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		5CD7D2531EE0F8D5008BF6DF /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		8804850E3EB37D0257FD9284 /* Pods-E-ponto.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-E-ponto.debug.xcconfig"; path = "Pods/Target Support Files/Pods-E-ponto/Pods-E-ponto.debug.xcconfig"; sourceTree = "<group>"; };
@@ -75,6 +75,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5C1430131EE4C34B00589507 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5C1430191EE4C3CA00589507 /* LoginViewController.swift */,
+				5C14301A1EE4C3CA00589507 /* MainViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5C1430141EE4C38E00589507 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		5CD124941EDF9D7A00A54628 = {
 			isa = PBXGroup;
 			children = (
@@ -96,6 +112,8 @@
 		5CD1249F1EDF9D7A00A54628 /* E-ponto */ = {
 			isa = PBXGroup;
 			children = (
+				5C1430141EE4C38E00589507 /* Services */,
+				5C1430131EE4C34B00589507 /* Controller */,
 				5CD7D2471EE0F8D5008BF6DF /* Helpers */,
 				5CD7D24A1EE0F8D5008BF6DF /* Model */,
 				5CD7D24C1EE0F8D5008BF6DF /* Resources */,
@@ -116,6 +134,7 @@
 			children = (
 				5CD7D2481EE0F8D5008BF6DF /* Error.swift */,
 				5CD7D2491EE0F8D5008BF6DF /* Extensions.swift */,
+				5C14301D1EE4C53800589507 /* AlertView.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -139,9 +158,6 @@
 		5CD7D24E1EE0F8D5008BF6DF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5CD7D24F1EE0F8D5008BF6DF /* BaseViewController.swift */,
-				5CD7D2501EE0F8D5008BF6DF /* LoginViewController.swift */,
-				5C14DDDB1EE1028300699815 /* MainViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -280,16 +296,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5CD7D2591EE0F8D5008BF6DF /* LoginViewController.swift in Sources */,
 				5CD124A91EDF9D7A00A54628 /* E_ponto.xcdatamodeld in Sources */,
+				5C14301C1EE4C3CA00589507 /* MainViewController.swift in Sources */,
 				5CD7D2541EE0F8D5008BF6DF /* Error.swift in Sources */,
 				5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */,
 				5CD7D2561EE0F8D5008BF6DF /* User.swift in Sources */,
+				5C14301E1EE4C53800589507 /* AlertView.swift in Sources */,
 				5CD7D25A1EE0F8D5008BF6DF /* BaseViewModel.swift in Sources */,
 				5CD7D2551EE0F8D5008BF6DF /* Extensions.swift in Sources */,
-				5CD7D2581EE0F8D5008BF6DF /* BaseViewController.swift in Sources */,
+				5C14301B1EE4C3CA00589507 /* LoginViewController.swift in Sources */,
 				5CD7D25B1EE0F8D5008BF6DF /* LoginViewModel.swift in Sources */,
-				5C14DDDC1EE1028300699815 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

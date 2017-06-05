@@ -16,10 +16,12 @@ class LoginViewModel {
   let validatedPassword: Observable<Bool>
   let loginEnabled: Observable<Bool>
   let loginObservable: Observable<(FIRUser?, Error?)>
+  let requestObservable: Observable<Error?>
   
   init(input: (username: Observable<String>,
     password: Observable<String>,
-    loginTap: Observable<Void>)) {
+    loginTap: Observable<Void>,
+    requestTap: Observable<Void>)) {
     
     self.validatedEmail = input.username
       .map { $0.characters.count >= 5 }
@@ -35,7 +37,34 @@ class LoginViewModel {
     self.loginObservable = input.loginTap.withLatestFrom(userAndPassword).flatMapLatest{ (username, password) in
       return LoginViewModel.login(username: username, password: password).observeOn(MainScheduler.instance)
     }
+    
+    self.requestObservable = input.requestTap.withLatestFrom(input.username).flatMap({ (username)  in
+        return LoginViewModel.requestPassword(username: username)
+    })
   }
+    
+    
+    private class func requestPassword(username: String?) -> Observable<Error?> {
+        
+        return Observable.create { observer in
+            let disposeBag = Disposables.create()
+            
+            guard let username = username else {
+                observer.onNext(AError.General("We need your email"))
+                return disposeBag
+            }
+            
+            FIRAuth.auth()?.sendPasswordReset(withEmail: username, completion: { (error) in
+                if error != nil {
+                    observer.onError(error!)
+                }
+                observer.onNext(AError.General("ok"))
+            })
+            
+            return disposeBag
+        }
+        
+    }
   
   private class func login(username: String?, password: String?) -> Observable<(FIRUser?, Error?)> {
     return  Observable.create { observer in
