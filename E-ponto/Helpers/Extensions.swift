@@ -37,3 +37,19 @@ extension UIView {
         self.layer.addSublayer(border)
     }
 }
+
+extension Date {
+    func dateToString() -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyymmdd"
+        return dateFormatter.string(from: self)
+    }
+    
+    func toString(format: String) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        return dateFormatter.string(from: self)
+    }
+}
+
+

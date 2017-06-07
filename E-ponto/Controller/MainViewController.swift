@@ -10,6 +10,9 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    private var viewModel: LoginViewModel!
+    
+    
     @IBOutlet var leftContraings: NSLayoutConstraint!
     @IBOutlet var leftMainMenu: UIView!
     
@@ -43,5 +46,7 @@ class MainViewController: UIViewController {
         })
         mainMenuActive = !mainMenuActive
     }
+    
+    
 
 }
