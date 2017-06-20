@@ -13,6 +13,6 @@ target 'E-ponto' do
 	pod 'RxSwift',    '~> 3.0'
 	pod 'RxCocoa',    '~> 3.0'
 	pod 'Firebase/Database'
-	
+	pod 'SwiftGen'
 
 end

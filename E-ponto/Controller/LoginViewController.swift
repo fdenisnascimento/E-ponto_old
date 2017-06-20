@@ -10,7 +10,7 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class LoginViewController: UIViewController, UITextFieldDelegate {
+class LoginViewController: BaseViewController, UITextFieldDelegate {
     
     private var viewModel: LoginViewModel!
     private let disposeBag = DisposeBag()
@@ -41,6 +41,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             self.loginButton.isEnabled = valid
             self.loginButton.alpha = valid ? 1 : 0.5
             }.addDisposableTo(disposeBag)
+        
+    
         
         
     }

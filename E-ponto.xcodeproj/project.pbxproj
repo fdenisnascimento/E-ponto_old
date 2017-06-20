@@ -11,6 +11,10 @@
 		5C14301B1EE4C3CA00589507 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C1430191EE4C3CA00589507 /* LoginViewController.swift */; };
 		5C14301C1EE4C3CA00589507 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14301A1EE4C3CA00589507 /* MainViewController.swift */; };
 		5C14301E1EE4C53800589507 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C14301D1EE4C53800589507 /* AlertView.swift */; };
+		5C7A32781EF8B05A00A0DF5F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A32771EF8B05A00A0DF5F /* BaseViewController.swift */; };
+		5C7A327A1EF8B11200A0DF5F /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A32791EF8B11200A0DF5F /* CalendarViewController.swift */; };
+		5C7A327E1EF8B2FD00A0DF5F /* DenisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C7A327D1EF8B2FD00A0DF5F /* DenisViewController.swift */; };
+		5C7A32801EF8B52000A0DF5F /* Constants in Resources */ = {isa = PBXBuildFile; fileRef = 5C7A327F1EF8B52000A0DF5F /* Constants */; };
 		5C9409BB1EE795A0001305CF /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9409BA1EE795A0001305CF /* Register.swift */; };
 		5C9409BD1EE79654001305CF /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C9409BC1EE79654001305CF /* MainViewModel.swift */; };
 		5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD124A01EDF9D7A00A54628 /* AppDelegate.swift */; };
@@ -32,6 +36,10 @@
 		5C1430191EE4C3CA00589507 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5C14301A1EE4C3CA00589507 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5C14301D1EE4C53800589507 /* AlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		5C7A32771EF8B05A00A0DF5F /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5C7A32791EF8B11200A0DF5F /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
+		5C7A327D1EF8B2FD00A0DF5F /* DenisViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DenisViewController.swift; sourceTree = "<group>"; };
+		5C7A327F1EF8B52000A0DF5F /* Constants */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Constants; sourceTree = "<group>"; };
 		5C9409BA1EE795A0001305CF /* Register.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		5C9409BC1EE79654001305CF /* MainViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		5CD1249D1EDF9D7A00A54628 /* E-ponto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "E-ponto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +91,10 @@
 			isa = PBXGroup;
 			children = (
 				5C1430191EE4C3CA00589507 /* LoginViewController.swift */,
+				5C7A32771EF8B05A00A0DF5F /* BaseViewController.swift */,
 				5C14301A1EE4C3CA00589507 /* MainViewController.swift */,
+				5C7A32791EF8B11200A0DF5F /* CalendarViewController.swift */,
+				5C7A327D1EF8B2FD00A0DF5F /* DenisViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -116,6 +127,7 @@
 		5CD1249F1EDF9D7A00A54628 /* E-ponto */ = {
 			isa = PBXGroup;
 			children = (
+				5C7A327F1EF8B52000A0DF5F /* Constants */,
 				5C1430141EE4C38E00589507 /* Services */,
 				5C1430131EE4C34B00589507 /* Controller */,
 				5CD7D2471EE0F8D5008BF6DF /* Helpers */,
@@ -190,6 +202,7 @@
 				5CD1249B1EDF9D7A00A54628 /* Resources */,
 				BB72C3CB40E8D43D69B98B43 /* [CP] Embed Pods Frameworks */,
 				AE6F59714762511AA2FCC1C2 /* [CP] Copy Pods Resources */,
+				5C7A32741EF8A8EF00A0DF5F /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -242,6 +255,7 @@
 			files = (
 				5CD124AE1EDF9D7A00A54628 /* LaunchScreen.storyboard in Resources */,
 				5CD7D2571EE0F8D5008BF6DF /* GoogleService-Info.plist in Resources */,
+				5C7A32801EF8B52000A0DF5F /* Constants in Resources */,
 				5CD124AB1EDF9D7A00A54628 /* Assets.xcassets in Resources */,
 				5CD124A61EDF9D7A00A54628 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +278,19 @@
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
+		};
+		5C7A32741EF8A8EF00A0DF5F /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftgen >/dev/null; then\n    swiftgen storyboards -t swift3 \"$PROJECT_DIR/E-ponto\" --output \"$PROJECT_DIR/E-ponto/Constants/Storyboards.swift\"\n   swiftgen images -t swift3  \"$PROJECT_DIR/E-ponto/Assets.xcassets\" --output \"$PROJECT_DIR/E-ponto/Constants/Images.swift\"\n\nelse\necho \"warning: SwiftGen not installed, download it from https://github.com/AliSoftware/SwiftGen\"\nfi";
 		};
 		AE6F59714762511AA2FCC1C2 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -302,11 +329,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C7A327A1EF8B11200A0DF5F /* CalendarViewController.swift in Sources */,
 				5CD124A91EDF9D7A00A54628 /* E_ponto.xcdatamodeld in Sources */,
 				5C9409BB1EE795A0001305CF /* Register.swift in Sources */,
 				5C14301C1EE4C3CA00589507 /* MainViewController.swift in Sources */,
 				5CD7D2541EE0F8D5008BF6DF /* Error.swift in Sources */,
 				5CD124A11EDF9D7A00A54628 /* AppDelegate.swift in Sources */,
+				5C7A327E1EF8B2FD00A0DF5F /* DenisViewController.swift in Sources */,
+				5C7A32781EF8B05A00A0DF5F /* BaseViewController.swift in Sources */,
 				5CD7D2561EE0F8D5008BF6DF /* User.swift in Sources */,
 				5C14301E1EE4C53800589507 /* AlertView.swift in Sources */,
 				5CD7D25A1EE0F8D5008BF6DF /* BaseViewModel.swift in Sources */,

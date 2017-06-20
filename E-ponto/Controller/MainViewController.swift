@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class MainViewController: UIViewController {
     
     private var viewModel: LoginViewModel!
@@ -23,6 +24,7 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
         //Properties of Views
     }

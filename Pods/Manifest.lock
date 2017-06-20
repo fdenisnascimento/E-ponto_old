@@ -37,6 +37,7 @@ PODS:
   - RxCocoa (3.4.1):
     - RxSwift (~> 3.4)
   - RxSwift (3.4.1)
+  - SwiftGen (4.2.1)
 
 DEPENDENCIES:
   - Firebase/Auth
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
   - RxCocoa (~> 3.0)
   - RxSwift (~> 3.0)
+  - SwiftGen
 
 SPEC CHECKSUMS:
   Firebase: 4b66b5b59c43edac745b87f0c87e42cdd0279c13
@@ -58,7 +60,8 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 2eefe6c429b86aa08bfbc1b5c891164d754adf91
   RxCocoa: a8a5f1d061d0043e28f56976829f31ce63e8eb09
   RxSwift: 656f8fbeca5bc372121a72d9ebdd3cd3bc0ffade
+  SwiftGen: 2ba2a88fc6130b96e38e2baa0029e4bd222ffd85
 
-PODFILE CHECKSUM: 2de1d78e32beea7e110d935873032d320521b495
+PODFILE CHECKSUM: c1edefce89679459095a2df3d554753cf2c87a5e
 
 COCOAPODS: 1.2.1
